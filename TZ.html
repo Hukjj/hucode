@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>跳转页面</title>
+    <style>
+        div {
+            height: 300px;
+            width: 300px;
+            text-align: center;
+            border: 1px solid black;
+            line-height: 300px;
+            animation-name: lll;
+            animation-duration: 5s;
+            animation-timing-function: ease-out;
+            animation-iteration-count: infinite;
+            position: relative;
+        }
+        
+        li {
+            font: 25px "黑体";
+            color: red;
+            text-align: center;
+            list-style: none;
+            position: absolute;
+            top: 150px;
+            left: auto;
+        }
+        @keyframes lll {
+            0% {
+                transform: translateX(0);
+            }
+            50% {
+                transform: translateX(500px);
+                border-radius: 50%;
+                background-color: cyan;
+            }
+            100% {
+                transform: translateX(0);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <li>谢谢各位老师的悉心教导，您们辛苦了。</li> 
+    </div>
+</body>
+</html>
